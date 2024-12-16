@@ -1,0 +1,383 @@
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+  }
+  #btn{
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#btn:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+  #blue-circle {
+    transition: width 2s linear 1s;
+    width: 500px;
+    background-color: rgb(0, 110, 255);
+    height: 500px;
+    border-radius: 50%;
+    position: relative;
+    border: 3px solid black;
+    animation-name: Blue-animation;
+    animation-duration: 4s;
+  }
+  #white-circle {
+    width: 400px;
+    background-color: white;
+    height: 425px;
+    border-radius: 50%;
+    position: absolute;
+    top: 80px;
+    left: 45px;
+    /* border: 3px solid black; */
+  }
+  .eyes {
+    display: flex;
+    position: absolute;
+    left: 100px;
+    top: -30px;
+  }
+  .eye {
+    width: 100px;
+    height: 130px;
+    border: 3px solid black;
+    border-radius: 60%;
+    background-color: white;
+  }
+  .eyeBall {
+    width: 40px;
+    height: 40px;
+    border: 3px solid black;
+    border-radius: 60%;
+    background-color: rgb(17, 16, 16);
+    position: absolute;
+    top: 50px;
+    /* left: 10px; */
+  }
+  .eye-white-dot {
+    width: 15px;
+    height: 20px;
+    border: 3px solid black;
+    border-radius: 60%;
+    background-color: white;
+    position: absolute;
+    top: 10px;
+    animation-name: blackeye;
+    animation-duration: 4s;
+  }
+  .eye2 {
+    width: 100px;
+    height: 130px;
+    border: 3px solid black;
+    border-radius: 60%;
+    background-color: white;
+  }
+  .eyeBall2 {
+    width: 40px;
+    height: 40px;
+    border: 3px solid black;
+    border-radius: 60%;
+    background-color: rgb(17, 16, 16);
+    position: absolute;
+    top: 50px;
+    /* left: 10px; */
+  }
+  .eye-white-dot2 {
+    width: 15px;
+    height: 20px;
+    border: 3px solid black;
+    border-radius: 60%;
+    background-color: white;
+    position: absolute;
+    top: 10px;
+    animation-name: blackeye;
+    animation-duration: 4s;
+  }
+  #nose {
+    width: 70px;
+    height: 70px;
+    border: 3px solid black;
+    border-radius: 60%;
+    background-color: rgb(236, 23, 23);
+    position: absolute;
+    left: 170px;
+    top: 85px;
+    animation-name: red-animation;
+    animation-duration: 4s;
+  }
+  #nose-dot {
+    width: 30px;
+    height: 25px;
+    border: 3px solid rgba(238, 46, 46, 0.973);
+    border-radius: 60%;
+    background-color: rgba(235, 53, 53, 0.822);
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    box-shadow: 2px 2px rgb(233, 97, 97);
+  }
+  #vl {
+    height: 150px;
+    border-left: 3px solid black;
+    position: absolute;
+    left: 204px;
+    top: 160px;
+  }
+  #mouth {
+    width: 300px;
+    height: 150px;
+    border: 3px solid black;
+    background-color: rgb(236, 23, 23);
+    position: absolute;
+    border-radius: 0 0 200px 200px;
+    left: 50px;
+    top: 230px;
+    overflow: hidden;
+    animation-name: red-animation;
+    animation-duration: 4s;
+  }
+  #tongue {
+    width: 200px;
+    height: 110px;
+    border: 3px solid rgb(196, 29, 29);
+    background-color: rgb(204, 45, 45);
+    position: absolute;
+    border-radius: 150px 150px 0 0;
+    left: 50px;
+    top: 40px;
+    animation-name: darkRed;
+    animation-duration: 4s;
+  }
+  #line1 {
+    height: 150px;
+    border-left: 3px solid black;
+    position: absolute;
+    transform: rotate(-60deg);
+    left: 40px;
+    animation-name: myline;
+    animation-duration: 4s;
+  }
+  #line2 {
+    height: 160px;
+    border-left: 3px solid black;
+    position: absolute;
+    transform: rotate(-90deg);
+    left: 20px;
+    top: 60px;
+    animation-name: myline;
+    animation-duration: 4s;
+  }
+  #line3 {
+    height: 150px;
+    border-left: 3px solid black;
+    position: absolute;
+    transform: rotate(-120deg);
+    left: 40px;
+    top: 125px;
+    animation-name: myline;
+    animation-duration: 4s;
+  }
+  #line4 {
+    height: 165px;
+    border-left: 3px solid black;
+    position: absolute;
+    transform: rotate(60deg);
+    left: 370px;
+    top: -9px;
+    animation-name: myline;
+    animation-duration: 4s;
+  }
+  #line5 {
+    height: 160px;
+    border-left: 3px solid black;
+    position: absolute;
+    transform: rotate(90deg);
+    left: 380px;
+    top: 60px;
+    animation-name: myline;
+    animation-duration: 4s;
+  }
+  #line6 {
+    height: 150px;
+    border-left: 3px solid black;
+    position: absolute;
+    transform: rotate(120deg);
+    left: 360px;
+    top: 125px;
+    animation-name: myline;
+    animation-duration: 4s;
+  }
+  @keyframes Blue-animation {
+    0% {
+      color: white;
+    }
+    25% {
+        background-color: rgba(102, 158, 233, 0.719);
+    }
+    50% {
+        background-color: rgba(54, 134, 240, 0.801);
+    }
+    75% {
+        background-color: rgba(33, 123, 241, 0.918);
+    }
+    100% {
+      background-color: rgb(0, 110, 255);
+    }
+  }
+  @keyframes red-animation {
+    0% {
+      color: white;
+    }
+    25% {
+      background-color: rgba(236, 98, 98, 0.76);
+    }
+    50% {
+      background-color: rgba(236, 69, 69, 0.836);
+    }
+    75% {
+      background-color: rgba(238, 54, 54, 0.938);
+    }
+    100% {
+      background-color: rgb(236, 23, 23);
+    }
+  }
+
+  @keyframes myline {
+    0%   {border-left: 3px solid rgba(117, 115, 115, 0.61)}
+    25%  {border-left: 3px solid rgba(82, 81, 81, 0.753)}
+    50%  {border-left: 3px solid rgba(51, 50, 50, 0.87)}
+    75%  {border-left: 3px solid rgba(22, 22, 22, 0.932);}
+    100% {border-left: 3px solid black;}
+  }
+
+  @keyframes darkRed {
+    0%   {background-color: rgba(197, 120, 120, 0.822);}
+    25%  {background-color: rgba(199, 108, 108, 0.753);}
+    50% {background-color: rgba(196, 89, 89, 0.822);}
+    75% {background-color: rgba(201, 67, 67, 0.897);}
+    100% {background-color: rgb(204, 45, 45);}
+  }
+
+  @keyframes blackeye {
+    0%   { background-color: rgba(161, 154, 154, 0.801);}
+    25%  { background-color: rgba(119, 114, 114, 0.658);}
+    50% { background-color: rgba(83, 79, 79, 0.76);}
+    75% { background-color: rgba(51, 48, 48, 0.884);}
+    100% { background-color: rgb(17, 16, 16);}
+  }
+
+  /* Extra small devices (max-width: 480px) */
+@media (max-width: 480px) {
+    #blue-circle {
+      width: 300px;
+      height: 300px;
+    }
+    #white-circle {
+      width: 240px;
+      height: 270px;
+      top: 40px;
+      left: 30px;
+    }
+    .eyes{
+        top: -20px;
+        left: 60px;
+    }
+    .eye {
+      width: 60px;
+      height: 80px;
+    }
+    .eyeBall {
+      width: 25px;
+      height: 30px;
+      top: 25px;
+      /* left: 45px; */
+    }
+    .eye-white-dot{
+       width: 10px; 
+       height: 15px;
+       top:5px
+
+    }
+    .eye-white-dot2{
+       width: 15px; 
+       height: 20px;
+    }
+    .eyeBall2 {
+      width: 25px;
+      height: 30px;
+      top: 20px;
+      left: 45px;
+    }
+    #nose {
+      width: 40px;
+      height: 40px;
+      top: 54px;
+      left: 103px;
+    }
+    #nose-dot {
+        width: 15px;
+        height: 20px;
+    }
+    #mouth {
+      width: 180px;
+      height: 90px;
+      left: 30px;
+      top: 150px;
+    }
+    #tongue {
+      width: 120px;
+      height: 70px;
+      left: 30px;
+      top: 20px;
+    }
+    #vl {
+        height: 50px;
+        left: 124px;
+        top: 100px;
+    }
+    #line1 {
+        height: 100px;
+        top: 5px;
+    }    
+    #line2 {
+        height: 100px;
+        top: 45px;
+        left: 30px;
+    }    
+    #line3 {
+        height: 100px;
+        top: 80px;
+    }    
+    #line4 {
+        height: 100px;
+        top: 5px;
+        left: 212px;
+    }    
+    #line5 {
+        height: 100px;
+        top: 43px;
+        left: 217px;
+    }   
+    #line6 {
+        height: 100px;
+        top: 83px;
+        left: 210px;
+    }    
+  }
